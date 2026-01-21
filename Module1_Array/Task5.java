@@ -1,34 +1,18 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-
-class Node{
-   private int data;
-    Node next;
-    Node(int a){
-        data=a;
-        next=null;
-        
-    }
-    public void getdata(){
-        System.out.println(data);
-    }
-    public void getref(){
-        System.out.println(next);
-    }
-}
 class Main {
+    
+    static int AddTwo(int a, int b){
+        int c = a+b;
+        return c;
+    }
+
     public static void main(String[] args) {
-        System.out.println("sanjana");
-        Node a =new Node(20);
+        int a = 5;
+        int b = 3;
+        int result = AddTwo(a,b);
         
-        Node  b=new Node(28);
-        a.getdata();
-        a.getref();
         
-        a.next=b;
-        
-        a.getref();
-        System.out.println(a);
-        System.out.println(b);
+        System.out.println("Sum = " + result);
     }
 }
